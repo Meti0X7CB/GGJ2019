@@ -13,8 +13,18 @@ public class Talkable : MonoBehaviour {
         gc = GameObject.Find("GameController").GetComponent<MyGameController>();
 	}
 	
+    private IEnumerator Smoke() {
+        GameObject.Find("ParticleSystem1").GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(0.5f);
+        Destroy(GameObject.Find("circle").gameObject);
+    }
+
     public int GetScriptRef() {
         int temp = scriptRef;
+
+        if (scriptRef == 5) {
+            StartCoroutine(Smoke());
+        }
 
         if (scriptRef == 10) { // you get the key for talking to this guy
             gc.SetKey(true);
