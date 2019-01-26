@@ -6,18 +6,20 @@ using UnityEngine.UI;
 
 public class TextBoxController : MonoBehaviour {
 
+    public float PrintSpeed;
     private Text text;
     private bool nextEvent;
     private GameObject nextPromptContinue;
     private GameObject nextPromptEnd;
     private bool isPrinting;
-    public float PrintSpeed;
+    private RectTransform backgroundRect;
 
 	void Start () {
         text = transform.Find("Text").gameObject.GetComponent<Text>();
         nextEvent = false; // if the user has requested the next dialogue
         nextPromptContinue = transform.Find("NextContinue").gameObject;
         nextPromptEnd = transform.Find("NextEnd").gameObject;
+        backgroundRect = transform.Find("TextBoxBackground").GetComponent<RectTransform>();
 
         // DEBUG
         string max_msg = "Lorem Lorem\nLorem Lorem\nipsum dolor\nsit amet, consectetur\nadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
@@ -82,13 +84,19 @@ public class TextBoxController : MonoBehaviour {
 
     private void RaiseBox() {
         // the text box should animate up onto the screen
-        Debug.Log("Raise text box");
+        backgroundRect.anchoredPosition = new Vector2(
+            backgroundRect.anchoredPosition.x,
+            50f
+        );
     } 
 
     private void LowerBox() {
         // the text box should lower until it is hidden off screen
-        Debug.Log("Lower text box");
-    } 
+        backgroundRect.anchoredPosition = new Vector2(
+            backgroundRect.anchoredPosition.x,
+            -50f
+        );
+    }
 
     private List<string> ChunkMsg(string msg) {        
 
