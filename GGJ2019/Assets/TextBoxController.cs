@@ -124,6 +124,7 @@ public class TextBoxController : MonoBehaviour {
             backgroundRect.anchoredPosition.x,
             -50f
         );
+        gc.dialogFinishes(); // notify gc so it can make circle vanish when necessary 
     }
 
     private List<string> ChunkMsg(string msg) {        

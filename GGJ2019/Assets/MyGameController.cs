@@ -9,10 +9,12 @@ public class MyGameController : MonoBehaviour {
     private bool playerCanMove;
     private TextBoxController textBoxController;
     private bool key;
+    private bool willVanish;
 
 	void Start () {
         playerCanMove = SceneManager.GetActiveScene().name == "HouseScene";
         key = false;
+        willVanish = false;
 	}
 	
     public void setTextBoxController(TextBoxController obj) {
@@ -43,9 +45,21 @@ public class MyGameController : MonoBehaviour {
         return key;
     }
 
+    public void dialogFinishes() {
+        if (willVanish) StartCoroutine(Smoke());
+    }
+
+    private IEnumerator Smoke()
+    {
+        GameObject.Find("ParticleSystem1").GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(0.5f);
+        Destroy(GameObject.Find("circle").gameObject);
+    }
+
     public void TalkToPlayer(int scriptRef) {
         // player is frozen while talking
         HideInfo();
+        if (scriptRef == 2) willVanish = true; // prep circle to vanish
         StartCoroutine(
             textBoxController.ShowText(ReadTextFile(scriptRef))
         );
