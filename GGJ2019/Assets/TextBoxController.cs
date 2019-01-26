@@ -65,6 +65,11 @@ public class TextBoxController : MonoBehaviour {
         // display msg on the text box in chunks of maxMsgLength
         List<string> chunks = ChunkMsg(msg);
 
+        /*
+        foreach (string chunk in chunks) {
+            Debug.Log(chunk);
+        } */
+
         // show next dialogue until there is none left
         for (int i = 0; i < chunks.Count; i++) {
 
@@ -128,7 +133,7 @@ public class TextBoxController : MonoBehaviour {
         List<string> msgBlocks = msg.Split('\n').ToList<string>();
         int numChunks = (int)Mathf.Ceil( msgBlocks.Count / length);
 
-        for (int i = 0; i <= numChunks; i++)
+        for (int i = 0; i < numChunks; i++)
         {
             chunks.Add(string.Join("\n", msgBlocks.Take(4).ToArray()));
 

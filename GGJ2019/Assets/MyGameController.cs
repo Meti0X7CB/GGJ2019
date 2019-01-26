@@ -16,6 +16,10 @@ public class MyGameController : MonoBehaviour {
 	
     public void setTextBoxController(TextBoxController obj) {
         textBoxController = obj;
+
+        // intro text
+        int intro = -1;
+        TalkToPlayer(intro);
     }
 
     public void setPlayerMovement(bool state) {
@@ -24,7 +28,7 @@ public class MyGameController : MonoBehaviour {
 
     private string ReadTextFile(int scriptRef) {
         string fileName = "Assets/Resources/" + scriptRef.ToString() + ".txt";
-        StreamReader reader = new StreamReader(fileName);
+        StreamReader reader = new StreamReader(fileName, System.Text.Encoding.UTF8);
         return reader.ReadToEnd();
     }
 
