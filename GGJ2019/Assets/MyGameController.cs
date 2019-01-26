@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class MyGameController : MonoBehaviour {
 
     private bool playerCanMove;
     private TextBoxController textBoxController;
+    private bool key;
 
 	void Start () {
         playerCanMove = true;
+        key = false;
 	}
 	
     public void setTextBoxController(TextBoxController obj) {
@@ -19,11 +22,25 @@ public class MyGameController : MonoBehaviour {
         playerCanMove = state;
     }
 
-    public void TalkToPlayer(int scriptRef) {      
+    private string ReadTextFile(int scriptRef) {
+        string fileName = "Assets/Resources/" + scriptRef.ToString() + ".txt";
+        StreamReader reader = new StreamReader(fileName);
+        return reader.ReadToEnd();
+    }
+
+    public void SetKey(bool status) {
+        key = status;
+    }
+
+    public bool GetKey () {
+        return key;
+    }
+
+    public void TalkToPlayer(int scriptRef) {
         // player is frozen while talking
         HideInfo();
         StartCoroutine(
-            textBoxController.ShowText("Testing1\nTesting2\nTesting3\nTesting4\nTesting5\nTesting6\nTesting7")
+            textBoxController.ShowText(ReadTextFile(scriptRef))
         );
     }
 

@@ -125,12 +125,18 @@ public class TextBoxController : MonoBehaviour {
 
         List<string> chunks = new List<string>();
         int length = 4; // number of lines to show
-        string[] msgBlocks = msg.Split('\n');
-        int numChunks = (int)Mathf.Ceil( msgBlocks.Length / length);
+        List<string> msgBlocks = msg.Split('\n').ToList<string>();
+        int numChunks = (int)Mathf.Ceil( msgBlocks.Count / length);
 
         for (int i = 0; i <= numChunks; i++)
         {
             chunks.Add(string.Join("\n", msgBlocks.Take(4).ToArray()));
+
+            int times = Mathf.Min(4, msgBlocks.Count);
+            while (times > 0) {
+                msgBlocks.RemoveAt(0);
+                times -= 1;
+            }
         }
         return chunks;
     }

@@ -68,6 +68,18 @@
     <Compile Include="Assets\TalkController.cs" />
     <Compile Include="Assets\TextBoxController.cs" />
     <Compile Include="Assets\WallFadeController.cs" />
+    <None Include="Assets\Resources\3.txt" />
+    <None Include="Assets\Resources\60.txt" />
+    <None Include="Assets\Resources\11.txt" />
+    <None Include="Assets\Resources\1.txt" />
+    <None Include="Assets\Resources\30.txt" />
+    <None Include="Assets\Resources\10.txt" />
+    <None Include="Assets\Resources\20.txt" />
+    <None Include="Assets\Resources\40.txt" />
+    <None Include="Assets\Resources\0.txt" />
+    <None Include="Assets\Resources\50.txt" />
+    <None Include="Assets\Resources\2.txt" />
+    <None Include="Assets\Resources\Intro.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/richardhayes/Dropbox/projects/GGJ2019/GGJ2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
