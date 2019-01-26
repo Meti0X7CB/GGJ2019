@@ -1147,27 +1147,33 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4186736988754476, guid: 66d0e08654dda4e3fbb45dc68db92772, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.08
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4186736988754476, guid: 66d0e08654dda4e3fbb45dc68db92772, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.08
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 212166859757011008, guid: 66d0e08654dda4e3fbb45dc68db92772,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.0754717
+      value: 0.9528302
       objectReference: {fileID: 0}
     - target: {fileID: 212166859757011008, guid: 66d0e08654dda4e3fbb45dc68db92772,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.0754717
+      value: 0.9528302
       objectReference: {fileID: 0}
     - target: {fileID: 212166859757011008, guid: 66d0e08654dda4e3fbb45dc68db92772,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.0754717
+      value: 0.9528302
       objectReference: {fileID: 0}
+    - target: {fileID: 212166859757011008, guid: 66d0e08654dda4e3fbb45dc68db92772,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7059e3cbe42964c86a6d6fabd06b53bb,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d0e08654dda4e3fbb45dc68db92772, type: 2}
   m_IsPrefabAsset: 0
@@ -1214,14 +1220,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.41, y: 0.41}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
 --- !u!61 &467333219
 BoxCollider2D:
@@ -1235,18 +1241,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01, y: -0.01}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.41, y: 0.41}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.21, y: 0.21}
   m_EdgeRadius: 0
 --- !u!1 &496056998
 GameObject:
