@@ -20,9 +20,8 @@ public class TextBoxController : MonoBehaviour {
         nextPromptEnd = transform.Find("NextEnd").gameObject;
 
         // DEBUG
-        string max_msg = "Lorem Lorem Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-        string max_msg2 = " Lorem Lorem Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-        StartCoroutine(ShowText(max_msg + max_msg2));
+        string max_msg = "Lorem Lorem\nLorem Lorem\nipsum dolor\nsit amet, consectetur\nadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+        StartCoroutine(ShowText(max_msg));
 	}
 	
     //
@@ -91,22 +90,16 @@ public class TextBoxController : MonoBehaviour {
         Debug.Log("Lower text box");
     } 
 
-    private List<string> ChunkMsg(string msg) {
-        
+    private List<string> ChunkMsg(string msg) {        
+
         List<string> chunks = new List<string>();
-        int length = MaxMsgLength();
-        int numChunks = (int)Mathf.Ceil(msg.Length / length);
+        int length = 4; // number of lines to show
+        string[] msgBlocks = msg.Split('\n');
+        int numChunks = (int)Mathf.Ceil( msgBlocks.Length / length);
 
         for (int i = 0; i <= numChunks; i++)
         {
-            if (i * length + length <= msg.Length)
-            {
-                chunks.Add(msg.Substring(i * length, length) + "...");
-            }
-            else
-            {
-                chunks.Add(msg.Substring(i * length));
-            }
+            chunks.Add(string.Join("\n", msgBlocks.Take(4).ToArray()));
         }
         return chunks;
     }
@@ -126,11 +119,12 @@ public class TextBoxController : MonoBehaviour {
         nextPromptEnd.SetActive(false);
     }
 
+    /*
     private int MaxMsgLength() {
         // returns the max text length that the box can show
         string max_msg = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
         return max_msg.Length;
-    }
+    } */
 
 	void Update () {
         if (Input.GetKeyUp("space")) {
