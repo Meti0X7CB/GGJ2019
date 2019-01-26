@@ -19,7 +19,8 @@ public class MyGameController : MonoBehaviour {
         playerCanMove = state;
     }
 
-    public void TalkToPlayer(int scriptRef) {
+    public void TalkToPlayer(int scriptRef) {      
+        // player is frozen while talking
         StartCoroutine(
             textBoxController.ShowText("Testing1\nTesting2\nTesting3\nTesting4\nTesting5\nTesting6\nTesting7")
         );

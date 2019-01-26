@@ -39,7 +39,7 @@ public class TalkController : MonoBehaviour {
 	void Update () {
         if (gc.PlayerCanMove())
         {
-            if (!hasTalked && currentPerson != null && (Input.GetKeyUp("space") || Input.GetKeyUp("enter")))
+            if (!hasTalked && currentPerson != null && Input.GetKeyUp("space"))
             {
                 Talk();
             }

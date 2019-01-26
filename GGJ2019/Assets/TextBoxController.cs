@@ -87,6 +87,7 @@ public class TextBoxController : MonoBehaviour {
 
     private void RaiseBox() {
         // the text box should animate up onto the screen
+        gc.setPlayerMovement(false);
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
             50f
@@ -94,6 +95,7 @@ public class TextBoxController : MonoBehaviour {
     } 
 
     private void LowerBox() {
+        gc.setPlayerMovement(true);
         // the text box should lower until it is hidden off screen
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
@@ -138,8 +140,13 @@ public class TextBoxController : MonoBehaviour {
     } */
 
 	void Update () {
-        if (Input.GetKeyUp("space")) {
-            ClickEvent();
+        // only react to text advancment if the player can't move
+        if (!gc.PlayerCanMove())
+        {
+            if (!isPrinting && Input.GetKeyDown("space"))
+            {
+                ClickEvent();
+            }
         }
 	}
 }
