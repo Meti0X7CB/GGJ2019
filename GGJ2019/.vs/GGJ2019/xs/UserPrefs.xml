@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{157628EE-6CAD-8795-A604-80BFDAFB6274}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WallFadeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WarpController.cs">
     <Files>
-      <File FileName="Assets/MyGameController.cs" Line="26" Column="40" />
+      <File FileName="Assets/MyGameController.cs" Line="34" Column="5" />
       <File FileName="Assets/PlayerController.cs" Line="35" Column="13" />
       <File FileName="Assets/TalkController.cs" Line="40" Column="5" />
-      <File FileName="Assets/TextBoxController.cs" Line="63" Column="20" />
-      <File FileName="Assets/Talkable.cs" Line="8" Column="27" />
-      <File FileName="Assets/MyCameraController.cs" Line="15" Column="33" />
-      <File FileName="Assets/WallFadeController.cs" Line="2" Column="34" />
+      <File FileName="Assets/TextBoxController.cs" Line="135" Column="9" />
+      <File FileName="Assets/Talkable.cs" Line="27" Column="26" />
+      <File FileName="Assets/MyCameraController.cs" Line="22" Column="47" />
+      <File FileName="Assets/WallFadeController.cs" Line="20" Column="5" />
+      <File FileName="Assets/WarpController.cs" Line="11" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

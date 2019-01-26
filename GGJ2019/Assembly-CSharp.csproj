@@ -68,6 +68,7 @@
     <Compile Include="Assets\TalkController.cs" />
     <Compile Include="Assets\TextBoxController.cs" />
     <Compile Include="Assets\WallFadeController.cs" />
+    <Compile Include="Assets\WarpController.cs" />
     <None Include="Assets\Resources\4.txt" />
     <None Include="Assets\Resources\60.txt" />
     <None Include="Assets\Resources\11.txt" />
@@ -80,6 +81,7 @@
     <None Include="Assets\Resources\61.txt" />
     <None Include="Assets\Resources\0.txt" />
     <None Include="Assets\Resources\50.txt" />
+    <None Include="Assets\Resources\70.txt" />
     <None Include="Assets\Resources\3.txt" />
     <None Include="Assets\Resources\-1.txt" />
     <Reference Include="UnityEditor.StandardEvents">

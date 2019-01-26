@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class MyGameController : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class MyGameController : MonoBehaviour {
     private bool key;
 
 	void Start () {
-        playerCanMove = true;
+        playerCanMove = SceneManager.GetActiveScene().name == "HouseScene";
         key = false;
 	}
 	
@@ -18,11 +19,13 @@ public class MyGameController : MonoBehaviour {
         textBoxController = obj;
 
         // intro text
-        int intro = -1;
-        TalkToPlayer(intro);
+        if (SceneManager.GetActiveScene().name != "HouseScene") {            
+            int intro = -1;
+            TalkToPlayer(intro);
+        }
     }
 
-    public void setPlayerMovement(bool state) {
+    public void SetPlayerMovement(bool state) {
         playerCanMove = state;
     }
 

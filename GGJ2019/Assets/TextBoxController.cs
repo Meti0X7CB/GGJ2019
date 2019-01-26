@@ -110,7 +110,7 @@ public class TextBoxController : MonoBehaviour {
 
     private void RaiseBox() {
         // the text box should animate up onto the screen
-        gc.setPlayerMovement(false);
+        gc.SetPlayerMovement(false);
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
             50f
@@ -118,7 +118,7 @@ public class TextBoxController : MonoBehaviour {
     } 
 
     private void LowerBox() {
-        gc.setPlayerMovement(true);
+        gc.SetPlayerMovement(true);
         // the text box should lower until it is hidden off screen
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
