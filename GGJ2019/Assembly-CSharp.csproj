@@ -61,11 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MyCameraController.cs" />
     <Compile Include="Assets\MyGameController.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\Talkable.cs" />
     <Compile Include="Assets\TalkController.cs" />
     <Compile Include="Assets\TextBoxController.cs" />
+    <Compile Include="Assets\WallFadeController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/richardhayes/Dropbox/projects/GGJ2019/GGJ2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

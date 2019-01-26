@@ -14,6 +14,8 @@ public class TextBoxController : MonoBehaviour {
     private GameObject nextPromptEnd;
     private bool isPrinting;
     private RectTransform backgroundRect;
+    private GameObject infoBox;
+    private Text infoText;
 
 	void Start () {
         gc = GameObject.Find("GameController").GetComponent<MyGameController>();
@@ -22,6 +24,12 @@ public class TextBoxController : MonoBehaviour {
         nextPromptContinue = transform.Find("NextContinue").gameObject;
         nextPromptEnd = transform.Find("NextEnd").gameObject;
         backgroundRect = transform.Find("TextBoxBackground").GetComponent<RectTransform>();
+
+        // info box
+        infoBox = transform.Find("InfoBox").gameObject;
+        infoText = transform.Find("InfoText").GetComponent<Text>();
+
+        // game controller
         gc.setTextBoxController(GetComponent<TextBoxController>());
 
         // DEBUG
@@ -32,6 +40,16 @@ public class TextBoxController : MonoBehaviour {
     //
     // Public
     //
+
+    public void ShowInfo(string msg) {
+        infoText.text = msg;
+        infoBox.SetActive(true);
+    }
+
+    public void HideInfo() {
+        infoText.text = "";
+        infoBox.SetActive(false);
+    }
 
     public void ClickEvent() {
         nextEvent = true;

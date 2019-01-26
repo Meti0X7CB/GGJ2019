@@ -18,6 +18,7 @@ public class TalkController : MonoBehaviour {
         if (collision.tag == "Talkable") {
             hasTalked = false;
             currentPerson = collision.GetComponent<Talkable>();
+            gc.ShowInfo("Talk to " + currentPerson.characterName + " with 'space'");
         }
 	}
 
@@ -26,13 +27,14 @@ public class TalkController : MonoBehaviour {
         if (collision.tag == "Talkable")
         {            
             currentPerson = null;
+            gc.HideInfo();
         }
     }
 
     private void Talk() {
         if (currentPerson != null) {
             hasTalked = true;
-            gc.TalkToPlayer(currentPerson.scriptRef);
+            gc.TalkToPlayer(currentPerson.GetScriptRef());
         }
     }
 
