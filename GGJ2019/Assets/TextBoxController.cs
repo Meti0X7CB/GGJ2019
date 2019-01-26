@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class TextBoxController : MonoBehaviour {
 
     public float PrintSpeed;
+    private MyGameController gc;
     private Text text;
     private bool nextEvent;
     private GameObject nextPromptContinue;
@@ -15,15 +16,17 @@ public class TextBoxController : MonoBehaviour {
     private RectTransform backgroundRect;
 
 	void Start () {
+        gc = GameObject.Find("GameController").GetComponent<MyGameController>();
         text = transform.Find("Text").gameObject.GetComponent<Text>();
         nextEvent = false; // if the user has requested the next dialogue
         nextPromptContinue = transform.Find("NextContinue").gameObject;
         nextPromptEnd = transform.Find("NextEnd").gameObject;
         backgroundRect = transform.Find("TextBoxBackground").GetComponent<RectTransform>();
+        gc.setTextBoxController(GetComponent<TextBoxController>());
 
         // DEBUG
-        string max_msg = "Lorem Lorem\nLorem Lorem\nipsum dolor\nsit amet, consectetur\nadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-        StartCoroutine(ShowText(max_msg));
+        //string max_msg = "Lorem Lorem\nLorem Lorem\nipsum dolor\nsit amet, consectetur\nadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+        //StartCoroutine(ShowText(max_msg));
 	}
 	
     //
