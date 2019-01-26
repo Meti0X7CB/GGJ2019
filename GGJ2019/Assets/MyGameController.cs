@@ -34,9 +34,12 @@ public class MyGameController : MonoBehaviour {
     }
 
     private string ReadTextFile(int scriptRef) {
-        string fileName = "Assets/Resources/" + scriptRef.ToString() + ".txt";
-        StreamReader reader = new StreamReader(fileName, System.Text.Encoding.UTF8);
-        return reader.ReadToEnd();
+        TextAsset txt = (TextAsset)Resources.Load(scriptRef.ToString(), typeof(TextAsset));
+        //string content = txt.text;
+        //string fileName = "Assets/Resources/" + scriptRef.ToString() + ".txt";
+        //StreamReader reader = new StreamReader(fileName, System.Text.Encoding.UTF8);
+        //return reader.ReadToEnd();
+        return txt.text;
     }
 
     public void SetKey(bool status) {
