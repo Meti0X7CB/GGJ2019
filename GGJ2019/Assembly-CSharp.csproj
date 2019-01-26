@@ -64,6 +64,7 @@
     <Compile Include="Assets\MyCameraController.cs" />
     <Compile Include="Assets\MyGameController.cs" />
     <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\RestartController.cs" />
     <Compile Include="Assets\Talkable.cs" />
     <Compile Include="Assets\TalkController.cs" />
     <Compile Include="Assets\TextBoxController.cs" />

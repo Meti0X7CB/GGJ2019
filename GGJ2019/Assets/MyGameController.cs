@@ -10,11 +10,13 @@ public class MyGameController : MonoBehaviour {
     private TextBoxController textBoxController;
     private bool key;
     private bool willVanish;
+    private bool gameEnds;
 
 	void Start () {
         playerCanMove = SceneManager.GetActiveScene().name == "HouseScene";
         key = false;
         willVanish = false;
+        gameEnds = false;
 	}
 	
     public void setTextBoxController(TextBoxController obj) {
@@ -45,8 +47,16 @@ public class MyGameController : MonoBehaviour {
         return key;
     }
 
+    private IEnumerator GameComplete() {
+        GameObject.Find("Redout").GetComponent<Animator>().Play("Redout");
+        GameObject.Find("ParticleSystem2").GetComponent<ParticleSystem>().Play();
+        GameObject.Find("YouWin").GetComponent<Canvas>().enabled = true;
+        yield return null;
+    }
+
     public void dialogFinishes() {
         if (willVanish) StartCoroutine(Smoke());
+        if (gameEnds) StartCoroutine(GameComplete());
     }
 
     private IEnumerator Smoke()
@@ -60,6 +70,7 @@ public class MyGameController : MonoBehaviour {
         // player is frozen while talking
         HideInfo();
         if (scriptRef == 2) willVanish = true; // prep circle to vanish
+        if (scriptRef == 4) gameEnds = true; // prep game to end 
         StartCoroutine(
             textBoxController.ShowText(ReadTextFile(scriptRef))
         );
