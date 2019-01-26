@@ -39765,16 +39765,6 @@ extern "C" IL2CPP_METHOD_ATTR void StreamReader__ctor_m1616861391 (StreamReader_
 		return;
 	}
 }
-// System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding)
-extern "C" IL2CPP_METHOD_ATTR void StreamReader__ctor_m448228252 (StreamReader_t4009935899 * __this, String_t* ___path0, Encoding_t1523322056 * ___encoding1, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___path0;
-		Encoding_t1523322056 * L_1 = ___encoding1;
-		StreamReader__ctor_m2637382018(__this, L_0, L_1, (bool)1, ((int32_t)4096), /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void StreamReader__ctor_m2637382018 (StreamReader_t4009935899 * __this, String_t* ___path0, Encoding_t1523322056 * ___encoding1, bool ___detectEncodingFromByteOrderMarks2, int32_t ___bufferSize3, const RuntimeMethod* method)
 {

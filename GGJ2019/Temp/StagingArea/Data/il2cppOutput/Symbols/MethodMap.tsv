@@ -2360,7 +2360,6 @@ StreamReader__ctor_m150050089	System.Void System.IO.StreamReader::.ctor()	mscorl
 StreamReader__ctor_m3941437302	System.Void System.IO.StreamReader::.ctor(System.IO.Stream,System.Text.Encoding)	mscorlib
 StreamReader__ctor_m2783219104	System.Void System.IO.StreamReader::.ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)	mscorlib
 StreamReader__ctor_m1616861391	System.Void System.IO.StreamReader::.ctor(System.String)	mscorlib
-StreamReader__ctor_m448228252	System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding)	mscorlib
 StreamReader__ctor_m2637382018	System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)	mscorlib
 StreamReader__cctor_m874052303	System.Void System.IO.StreamReader::.cctor()	mscorlib
 StreamReader_Initialize_m3160193871	System.Void System.IO.StreamReader::Initialize(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)	mscorlib
@@ -8829,6 +8828,7 @@ RenderTextureDescriptor__cctor_m3115061957	System.Void UnityEngine.RenderTexture
 Renderer_get_sortingLayerID_m3902855301	System.Int32 UnityEngine.Renderer::get_sortingLayerID()	UnityEngine.CoreModule
 Renderer_get_sortingOrder_m344607889	System.Int32 UnityEngine.Renderer::get_sortingOrder()	UnityEngine.CoreModule
 RequireComponent__ctor_m886241599	System.Void UnityEngine.RequireComponent::.ctor(System.Type)	UnityEngine.CoreModule
+Resources_Load_m3480190876	UnityEngine.Object UnityEngine.Resources::Load(System.String,System.Type)	UnityEngine.CoreModule
 Resources_GetBuiltinResource_m3641967638	UnityEngine.Object UnityEngine.Resources::GetBuiltinResource(System.Type,System.String)	UnityEngine.CoreModule
 Scene_GetNameInternal_m992487900	System.String UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)	UnityEngine.CoreModule
 Scene_get_handle_m1544696971_AdjustorThunk	System.Int32 UnityEngine.SceneManagement.Scene::get_handle()	UnityEngine.CoreModule
@@ -8906,6 +8906,8 @@ SystemInfo_get_operatingSystemFamily_m4256884728	UnityEngine.OperatingSystemFami
 SystemInfo_GetOperatingSystemFamily_m1440411909	UnityEngine.OperatingSystemFamily UnityEngine.SystemInfo::GetOperatingSystemFamily()	UnityEngine.CoreModule
 SystemInfo_IsFormatSupported_m1855899386	System.Boolean UnityEngine.SystemInfo::IsFormatSupported(UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.FormatUsage)	UnityEngine.CoreModule
 TextAreaAttribute__ctor_m2173231689	System.Void UnityEngine.TextAreaAttribute::.ctor(System.Int32,System.Int32)	UnityEngine.CoreModule
+TextAsset_get_text_m2027878391	System.String UnityEngine.TextAsset::get_text()	UnityEngine.CoreModule
+TextAsset_ToString_m2170047097	System.String UnityEngine.TextAsset::ToString()	UnityEngine.CoreModule
 Texture__ctor_m3554519797	System.Void UnityEngine.Texture::.ctor()	UnityEngine.CoreModule
 Texture_GetDataWidth_m2906817031	System.Int32 UnityEngine.Texture::GetDataWidth()	UnityEngine.CoreModule
 Texture_GetDataHeight_m100074750	System.Int32 UnityEngine.Texture::GetDataHeight()	UnityEngine.CoreModule

@@ -171,6 +171,7 @@ const RuntimeType* RaycastHit2DU5BU5D_t4286651560_0_0_0_var;
 const RuntimeType* GetRayIntersectionAllNonAllocCallback_t2311174851_0_0_0_var;
 const RuntimeType* RaycastHitU5BU5D_t1690781147_0_0_0_var;
 const RuntimeType* GetRaycastNonAllocCallback_t3841783507_0_0_0_var;
+const RuntimeType* TextAsset_t3022178571_0_0_0_var;
 const RuntimeType* GenericComparer_1_t3581574675_0_0_0_var;
 const RuntimeType* GenericEqualityComparer_1_t2270490560_0_0_0_var;
 const RuntimeType* _Attribute_t122494719_0_0_0_var;
@@ -1449,6 +1450,7 @@ RuntimeClass* AnalyticsEventParamListContainer_t587083383_il2cpp_TypeInfo_var;
 RuntimeClass* Dictionary_2_t1354619006_il2cpp_TypeInfo_var;
 RuntimeClass* List_1_t1569362707_il2cpp_TypeInfo_var;
 RuntimeClass* List_1_t3418373063_il2cpp_TypeInfo_var;
+RuntimeClass* TextAsset_t3022178571_il2cpp_TypeInfo_var;
 RuntimeClass* U3CGameCompleteU3Ec__Iterator0_t3528669241_il2cpp_TypeInfo_var;
 RuntimeClass* U3CSmokeU3Ec__Iterator1_t414948208_il2cpp_TypeInfo_var;
 RuntimeClass* RestartController_t2402359280_il2cpp_TypeInfo_var;
@@ -7911,8 +7913,6 @@ String_t* _stringLiteral201922340;
 String_t* _stringLiteral1045670989;
 String_t* _stringLiteral1236039580;
 String_t* _stringLiteral3506723578;
-String_t* _stringLiteral2940661631;
-String_t* _stringLiteral3988949892;
 String_t* _stringLiteral1935018989;
 String_t* _stringLiteral2624627980;
 String_t* _stringLiteral3012704183;
@@ -8127,6 +8127,7 @@ extern void** const g_MetadataUsages[7954] =
 	(void**)(&GetRayIntersectionAllNonAllocCallback_t2311174851_0_0_0_var),
 	(void**)(&RaycastHitU5BU5D_t1690781147_0_0_0_var),
 	(void**)(&GetRaycastNonAllocCallback_t3841783507_0_0_0_var),
+	(void**)(&TextAsset_t3022178571_0_0_0_var),
 	(void**)(&GenericComparer_1_t3581574675_0_0_0_var),
 	(void**)(&GenericEqualityComparer_1_t2270490560_0_0_0_var),
 	(void**)(&_Attribute_t122494719_0_0_0_var),
@@ -9405,6 +9406,7 @@ extern void** const g_MetadataUsages[7954] =
 	(void**)(&Dictionary_2_t1354619006_il2cpp_TypeInfo_var),
 	(void**)(&List_1_t1569362707_il2cpp_TypeInfo_var),
 	(void**)(&List_1_t3418373063_il2cpp_TypeInfo_var),
+	(void**)(&TextAsset_t3022178571_il2cpp_TypeInfo_var),
 	(void**)(&U3CGameCompleteU3Ec__Iterator0_t3528669241_il2cpp_TypeInfo_var),
 	(void**)(&U3CSmokeU3Ec__Iterator1_t414948208_il2cpp_TypeInfo_var),
 	(void**)(&RestartController_t2402359280_il2cpp_TypeInfo_var),
@@ -15867,8 +15869,6 @@ extern void** const g_MetadataUsages[7954] =
 	(void**)(&_stringLiteral1045670989),
 	(void**)(&_stringLiteral1236039580),
 	(void**)(&_stringLiteral3506723578),
-	(void**)(&_stringLiteral2940661631),
-	(void**)(&_stringLiteral3988949892),
 	(void**)(&_stringLiteral1935018989),
 	(void**)(&_stringLiteral2624627980),
 	(void**)(&_stringLiteral3012704183),

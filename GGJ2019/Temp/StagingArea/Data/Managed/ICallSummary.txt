@@ -300,6 +300,7 @@ UnityEngine.RenderTexture::set_format
 UnityEngine.RenderTexture::set_height
 UnityEngine.RenderTexture::set_width
 UnityEngine.Resources::GetBuiltinResource
+UnityEngine.Resources::Load
 UnityEngine.Rigidbody2D::AddForce_Injected
 UnityEngine.SceneManagement.Scene::GetNameInternal
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
@@ -326,6 +327,7 @@ UnityEngine.SpriteRenderer::get_color_Injected
 UnityEngine.SpriteRenderer::set_color_Injected
 UnityEngine.SystemInfo::IsFormatSupported
 UnityEngine.SystemInfo::GetOperatingSystemFamily
+UnityEngine.TextAsset::get_text
 UnityEngine.TextGenerator::Populate_Internal_Injected
 UnityEngine.TextGenerator::get_characterCount
 UnityEngine.TextGenerator::get_lineCount
