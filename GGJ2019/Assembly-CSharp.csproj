@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\TextBoxController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/richardhayes/Dropbox/projects/GGJ2019/GGJ2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
