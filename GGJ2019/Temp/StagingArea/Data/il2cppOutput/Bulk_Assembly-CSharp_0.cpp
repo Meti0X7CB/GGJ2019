@@ -6010,7 +6010,7 @@ extern "C" IL2CPP_METHOD_ATTR void TextBoxController_RaiseBox_m1336471805 (TextB
 		float L_4 = (&V_0)->get_x_0();
 		Vector2_t2156229523  L_5;
 		memset(&L_5, 0, sizeof(L_5));
-		Vector2__ctor_m3970636864((&L_5), L_4, (50.0f), /*hidden argument*/NULL);
+		Vector2__ctor_m3970636864((&L_5), L_4, (62.72499f), /*hidden argument*/NULL);
 		RectTransform_set_anchoredPosition_m4126691837(L_1, L_5, /*hidden argument*/NULL);
 		return;
 	}
@@ -6030,7 +6030,7 @@ extern "C" IL2CPP_METHOD_ATTR void TextBoxController_LowerBox_m1736793200 (TextB
 		float L_4 = (&V_0)->get_x_0();
 		Vector2_t2156229523  L_5;
 		memset(&L_5, 0, sizeof(L_5));
-		Vector2__ctor_m3970636864((&L_5), L_4, (-50.0f), /*hidden argument*/NULL);
+		Vector2__ctor_m3970636864((&L_5), L_4, (-62.72499f), /*hidden argument*/NULL);
 		RectTransform_set_anchoredPosition_m4126691837(L_1, L_5, /*hidden argument*/NULL);
 		MyGameController_t585990364 * L_6 = __this->get_gc_5();
 		MyGameController_dialogFinishes_m3853045560(L_6, /*hidden argument*/NULL);

@@ -113,7 +113,7 @@ public class TextBoxController : MonoBehaviour {
         gc.SetPlayerMovement(false);
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
-            50f
+            62.72499f
         );
     } 
 
@@ -122,7 +122,7 @@ public class TextBoxController : MonoBehaviour {
         // the text box should lower until it is hidden off screen
         backgroundRect.anchoredPosition = new Vector2(
             backgroundRect.anchoredPosition.x,
-            -50f
+            -62.72499f
         );
         gc.dialogFinishes(); // notify gc so it can make circle vanish when necessary 
     }
