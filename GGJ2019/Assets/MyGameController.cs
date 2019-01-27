@@ -94,6 +94,8 @@ public class MyGameController : MonoBehaviour {
     }
 
 	void Update () {
-		
+        if (Input.GetKeyUp(KeyCode.Escape)) {
+            SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        }
 	}
 }
