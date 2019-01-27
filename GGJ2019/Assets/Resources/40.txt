@@ -3,7 +3,7 @@ Hey there!
 What are you doing out so late?
 
 Rect:
-I’m just looking around;
+Iï¿½m just looking around;
 I have to get used to this city.
 
 Rick:
@@ -15,7 +15,7 @@ Yeah, just moved in down the street the other day.
 
 
 Rick:
-Well, I’m sure you have time to find your way around tomorrow.
+Well, Iï¿½m sure you have time to find your way around tomorrow.
 
 
 Rect:
@@ -27,8 +27,8 @@ Where are you from?
 
 
 Rect:
-That’s not important.
-I’m here now, so that’s the only thing that matters.
+Thatï¿½s not important.
+Iï¿½m here now, so thatï¿½s the only thing that matters.
 
 Rick:
 ...I see...

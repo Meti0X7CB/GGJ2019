@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{157628EE-6CAD-8795-A604-80BFDAFB6274}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RestartController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyGameController.cs">
     <Files>
-      <File FileName="Assets/MyGameController.cs" Line="71" Column="65" />
+      <File FileName="Assets/MyGameController.cs" Line="71" Column="1" />
       <File FileName="Assets/PlayerController.cs" Line="9" Column="24" />
       <File FileName="Assets/TalkController.cs" Line="40" Column="5" />
       <File FileName="Assets/TextBoxController.cs" Line="127" Column="86" />
